@@ -13,7 +13,7 @@ Turn staged changes into a well-formed Conventional Commits message.
 ## Steps
 1. Run `git diff --staged` to read the staged changes. If nothing is staged,
    tell the user to stage files first (or offer to run `git add`).
-2. Infer the **type**: feat, fix, docs, style, refactor, perf, test, build,
+2. Infer the **type**: feature, fix, docs, style, refactor, perf, test, build,
    ci, chore, revert.
 3. Infer an optional **scope** from the touched paths/module.
 4. Write the message in this format:
