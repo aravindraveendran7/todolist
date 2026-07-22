@@ -15,10 +15,10 @@ export default function TodoList() {
       setNewTask("");
     }
   }
-  function deleteTask(index) {
-    const updatedTasks = tasks.filter((_, indx) => indx != index);
-    setTasks(updatedTasks);
-  }
+  // function deleteTask(index) {
+  //   const updatedTasks = tasks.filter((_, indx) => indx != index);
+  //   setTasks(updatedTasks);
+  // }
 
   function disableButton() {
     if (tasks.length > 0) {
