@@ -27,8 +27,8 @@ what changed, why, and how it was verified.
 3. If a PR template exists (`.github/PULL_REQUEST_TEMPLATE.md` or similar),
    read it and fill that structure instead of the default below.
 4. Write the title and description.
-5. Present the result; do NOT open the PR unless the user asks (then use
-   `gh pr create` if the GitHub CLI is available).
+5. Present the result; do NOT open the PR unless the user asks.
+6. If the user asks to open the PR, run `git push -u origin feature-branch-name`.
 ## Title
 - Prefer Conventional Commits style: `<type>(<scope>): <summary>`.
 - Imperative mood, <= 70 chars, no trailing period.
@@ -76,8 +76,7 @@ Append a checklist the author can tick before requesting review:
 - [ ] Breaking changes and migrations documented above
 ## Output
 Present the title and description in a single code block ready to paste into the
-PR form. If the user asks to open it directly and `gh` is available, run
-`gh pr create --base <base> --title "..." --body "..."`.
+PR form. If the user asks to open it directly use `git push -u origin feature-branch-name`.
  
 ## Example
 Title:
